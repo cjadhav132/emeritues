@@ -1,0 +1,33 @@
+.mainContentDiv {
+    display: flex;
+    padding: 24px 10%;
+}
+
+.RestuarantName {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.detailImg {
+    width: 250px;
+}
+
+.detailContainer{
+    color: white;
+    margin-left: 16px;
+    text-align: left;
+}
+
+.phoneImg {
+    height: 20px;
+    margin: 4px;
+}
+
+.phoneContainer {
+    display: flex;
+}
+
+.detailRating{
+    width: fit-content;
+    margin: 4px 8px;
+}

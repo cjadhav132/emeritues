@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: #9b9b9b;
 }
 
 .App-logo {
@@ -32,7 +33,36 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.AppNavbar {
+  height: 50px;
+  background: white;
+}
+
+.AppContentDiv {
+  height: calc(100vh - 50px);
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.ips {
+  margin-left: 4px;
+  width: 14ch;
+}
+
+.ipsLabel {
+  margin-right: 12px;
+}
+
+.locations {
+  margin-left: 24px;
+}
+
+.spinnerTop {
+  margin-top: 100px;
 }

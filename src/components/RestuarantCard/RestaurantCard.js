@@ -1,4 +1,5 @@
 import './restaurantCard.css'
+import Ratings from '../Ratings/Ratings'
 
 const RestaurantCard = ({ restaurant, showDetails }) => {
     const handleShowDetails = () => {
@@ -6,16 +7,19 @@ const RestaurantCard = ({ restaurant, showDetails }) => {
     }
 
     return (
-        <div className='restaurantContainer'>
-            <div>
-                <img className="resturantImage" src={restaurant.image_url} />
+        <div className='restaurantContainer row'>
+            <div className='col-12'>
+                <img className="resturantImage" src={restaurant.image_url}  alt=''/>
             </div>
-            <div>{restaurant.name}</div>
-            <div>{restaurant.rating}</div>
-            <div>{restaurant.is_closed ? "yes" : "no"}</div>
-            <div>{restaurant.price ? restaurant.price : "--"}</div>
-            <div className='detailsButton'>
-                <button onClick={handleShowDetails}>
+            <div className='col-12 name'>
+                <div>{restaurant.name}</div>
+            </div>
+            <div className='col-6 centerContent'>
+                <Ratings rating={restaurant.rating} />
+                <div>{restaurant.price ? restaurant.price : "--"}</div>
+            </div>
+            <div className='centerContent col-6' >
+                <button className='btn btn-outline-primary' style={{ height: 'fitContent' }} onClick={handleShowDetails}>
                     Click to see details
                 </button>
             </div>
